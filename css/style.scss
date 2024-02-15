@@ -1,0 +1,14 @@
+// Core
+@import "core/globals";
+
+// Components
+@import "components/layout/monitoring";
+@import "components/layout/news";
+@import "components/layout/content";
+
+// Libs
+@import "libs/bootstrap-grid.min.css";
+@import "libs/bootstrap-utilities.rtl.css";
+
+// Pages
+@import "pages/index";
