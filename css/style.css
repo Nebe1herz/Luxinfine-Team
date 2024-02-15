@@ -1,0 +1,54 @@
+@charset "UTF-8";
+@import "libs/bootstrap-grid.min.css";
+@import "libs/bootstrap-utilities.rtl.css";
+.wrapper {
+  max-width: 1020px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.monitoring__card {
+  display: block;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(15px);
+  transition: all 0.15s ease-in;
+  /* Модификаторы */
+  /* Элементы */
+}
+.monitoring__card:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+.monitoring__card_hover-false {
+  pointer-events: none;
+  user-select: none;
+}
+.monitoring__card-heading {
+  font-weight: 500;
+  line-height: 1.1;
+  color: #E2E8F0;
+}
+.monitoring__card-info {
+  font-weight: 400;
+  color: rgba(225, 232, 240, 0.7);
+}
+.monitoring__card-progress {
+  border-radius: 35px;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+.monitoring__card-progress__bar {
+  display: block;
+  background: linear-gradient(to right, #66FFED, #00FF66);
+  height: 10px;
+  width: 0;
+}
+
+.content {
+  width: 100%;
+  background: url("../img/background-content.svg");
+  background-size: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
