@@ -1,0 +1,51 @@
+.monitoring{
+	&__card{
+		display: block;
+		border-radius: 15px;
+		background: rgba(0, 0, 0, 0.5);
+		backdrop-filter: blur(15px);
+		transition: all .15s ease-in;
+
+		&:hover{
+			background: rgba(0, 0, 0, 0.8);
+		}
+
+		/* Модификаторы */
+		&_hover{
+			&-false{
+				pointer-events: none;
+				user-select: none;
+			}
+		}
+
+		/* Элементы */
+		&-heading{
+			font-weight: 500;
+			line-height: 1.1;
+			color: #E2E8F0;
+		}
+
+		&-info{
+			font-weight: 400;
+			color: rgba(225, 232, 240, 0.7);
+		}
+
+		&-progress{
+			border-radius: 35px;
+			background: rgba(255, 255, 255, 0.1);
+			overflow: hidden;
+
+			&__bar{
+				display: block;
+				background:
+						linear-gradient(
+										to right,
+										#66FFED,
+										#00FF66
+						);
+				height: 10px;
+				width: 0;
+			}
+		}
+	}
+}
