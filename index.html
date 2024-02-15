@@ -8,6 +8,8 @@
 
     <!-- CSS -->
 	<link data-precedence="next" href="./external-resources/64fe7c238628ab5d.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
 
     <!-- Скрипты, хз что делают, но оно так было в оригинале, тут не мешает, есть не просит, пусть будет, таки это не мой проект... -->
 	<script async="" src="./external-resources/tag.js.Без названия"></script>
@@ -65,6 +67,7 @@
 
     <!-- Основное содержание страницы -->
     <main class="flex flex-col items-center justify-center gap-8 text-slate-200 before:pointer-events-none before:absolute before:inset-0 before:block before:h-full before:w-full before:bg-[url(&#39;/bg-cover.svg&#39;)] before:bg-cover before:bg-no-repeat before:opacity-5 lg:mb-auto lg:mt-60">
+		<!-- Шапка -->
         <h1 class="text-center text-3xl font-bold text-slate-200 lg:text-5xl">LuxinFine - луч света в темном царстве</h1>
         <h2 class="text-center text-lg font-semibold text-slate-300 lg:text-3xl">Присоединяйся, у нас тут весело!</h2>
         <div class="grid grid-cols-2 justify-between gap-12 p-8 md:grid-cols-4 lg:grid-rows-1">
@@ -85,6 +88,63 @@
             <a class="flex flex-col gap-2 justify-center items-center text-md lg:text-xl text-slate-200 hover:text-gray-300 w-[120px] text-center" href="https://luxinfine.su/ru/donate" hreflang="ru">
                 <img alt="DonateIcon" class="h-[30px] w-[30px] md:h-[45px] md:w-[45px] lg:h-[60px] lg:w-[60px]" data-nimg="1" decoding="async" height="800" loading="lazy" src="./external-resources/donate-icon.a71db87b.svg" style="color: transparent;" width="800">Донат </a>
         </div>
+
+		<!-- Мониторинг -->
+		<div class="wrapper lg:mt-60">
+			<h2 class="text-center fs-1 font-bold text-slate-200">Мониторинг серверов</h2>
+			<h3 class="text-center text-lg font-semibold fs-4 mt-3">
+				<span class="text-slate-300">Всего 122 игрока в сети</span>
+			</h3>
+			<div class="row monitoring mt-4">
+				<div class="col-6 py-3">
+					<div class="monitoring__card px-4 py-4">
+						<h4 class="monitoring__card-heading fs-2">
+							Infinity<sup>2</sup>
+						</h4>
+						<p class="monitoring__card-info fs-5">
+							50 из 100 игроков
+						</p>
+						<div class="monitoring__card-progress mt-3">
+							<div class="monitoring__card-progress__bar" style="width: 50%">
+								<!-- Здесь ничего не должно быть, на div с классом monitoring__card-progress-bar вешаем style="width: 50%". где 50% - это % текущего онлайна от максимального онлайна-->
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-6 py-3">
+					<div class="monitoring__card px-4 py-4">
+						<h4 class="monitoring__card-heading fs-2">
+							Vexillum
+						</h4>
+						<p class="monitoring__card-info fs-5">
+							98 из 100 игроков
+						</p>
+						<div class="monitoring__card-progress mt-3">
+							<div class="monitoring__card-progress__bar" style="width: 98%">
+								<!-- Здесь ничего не должно быть, на div с классом monitoring__card-progress-bar вешаем style="width: 50%". где 50% - это % текущего онлайна от максимального онлайна-->
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-6 py-3">
+					<div class="monitoring__card px-4 py-4">
+						<h4 class="monitoring__card-heading fs-2">
+							Volitare
+						</h4>
+						<p class="monitoring__card-info fs-5">
+							Выключен
+						</p>
+						<div class="monitoring__card-progress mt-3">
+							<div class="monitoring__card-progress__bar" style="width: 0%">
+								<!-- Здесь ничего не должно быть, на div с классом monitoring__card-progress-bar вешаем style="width: 50%". где 50% - это % текущего онлайна от максимального онлайна-->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Новости -->
     </main>
 
     <!-- Копирайт -->
