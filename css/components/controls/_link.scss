@@ -1,0 +1,11 @@
+.link{
+	display: inline-block;
+	border-bottom: 3px solid rgba(255, 255, 255, 0.25);
+	color: #fff;
+	opacity: .5;
+	transition: all .1s ease-in;
+
+	&:hover{
+		opacity: 1;
+	}
+}
