@@ -2,9 +2,12 @@
 @import "core/globals";
 
 // Components
+@import "components/layout/content";
+@import "components/layout/section";
 @import "components/layout/monitoring";
 @import "components/layout/news";
-@import "components/layout/content";
+
+@import "components/controls/link";
 
 // Libs
 @import "libs/bootstrap-grid.min.css";
