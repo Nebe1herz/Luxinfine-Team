@@ -1,0 +1,13 @@
+.section{
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	justify-items: center;
+	grid-gap: 0;
+
+	padding: 25vh 0 0;
+
+	@media (max-width: 560px) {
+		padding: 10vh 0 0;
+	}
+}
