@@ -1,5 +1,39 @@
 .content{
+	position: relative;
 	width: 100%;
-	background: url("../img/background-content.svg");
-	background-size: 100%;
+	overflow: hidden;
+	/*background: url("../img/background-content.svg");
+	background-size: 100%;*/
+
+	&__background{
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		animation: 45s content__background linear  infinite;
+		object-fit: contain;
+		transform-origin: center top;
+		will-change: transform, opacity;
+		pointer-events: none;
+		z-index: 0;
+
+		@keyframes content__background{
+			0%, 100%{
+				transform: scale(1.5) skew(0, 0)
+			}
+			15%{
+				transform: scale(1.5) skew(-15deg, -10deg)
+			}
+			42%{
+				transform: scale(1.5) skew(-15deg, 10deg)
+			}
+			72%{
+				transform: scale(1.5) skew(15deg, -10deg)
+			}
+			85%{
+				transform: scale(1.5) skew(15deg, 10deg)
+			}
+		}
+	}
 }
