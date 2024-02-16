@@ -1,1 +1,6 @@
+.sass-cache
 .idea
+
+*.scssc
+*.css.map
+*.min.min.css
