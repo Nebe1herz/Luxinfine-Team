@@ -1,0 +1,46 @@
+.news{
+	list-style: none;
+
+	&__item{
+		&:not(:first-child){
+			margin-top: 15px;
+		}
+	}
+
+	&__card{
+		display: block;
+		border-radius: 15px;
+		background: rgba(0, 0, 0, 0.5);
+		backdrop-filter: blur(15px);
+		transition: all .1s ease-in;
+
+		&:hover{
+			background: rgba(0, 0, 0, 0.8);
+		}
+
+		/* Элементы */
+		&-img{
+			border-radius: 50%;
+			width: 32px;
+			height: 32px;
+		}
+
+		&-heading{
+			font-size: 20px;
+			font-weight: 600;
+			color: #E2E8F0;
+		}
+
+		&-meta{
+			font-size: 14px;
+			font-weight: 500;
+			color: #858C97;
+		}
+
+		&-about{
+			font-size: 16px;
+			color: #c1c7d2;
+			margin-top: 15px;
+		}
+	}
+}
