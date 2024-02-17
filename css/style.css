@@ -148,4 +148,8 @@
   height: 100%;
 }
 
+.background-gradient {
+  background: linear-gradient(to bottom, #111827, #093749, #0c4d66, #093749, #111827);
+}
+
 /*# sourceMappingURL=style.css.map */
