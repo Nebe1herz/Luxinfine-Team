@@ -8,16 +8,6 @@
 	}
 
 	&__card{
-		display: block;
-		border-radius: 15px;
-		background: rgba(0, 0, 0, 0.5);
-		backdrop-filter: blur(15px);
-		transition: all .1s ease-in;
-
-		&:hover{
-			background: rgba(0, 0, 0, 0.8);
-		}
-
 		/* Элементы */
 		&-img{
 			border-radius: 50%;

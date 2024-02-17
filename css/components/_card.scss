@@ -1,0 +1,26 @@
+.card{
+	display: block;
+	border-radius: 15px;
+	background: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(15px);
+	transition: all .1s ease-in;
+
+	&:hover{
+		background: rgba(0, 0, 0, 0.8);
+	}
+
+	/* Модификаторы */
+	&_hover{
+		&-false{
+			pointer-events: none;
+			user-select: none;
+		}
+	}
+
+	&_disabled{
+		background: rgba(0, 0, 0, 0.3);
+		pointer-events: none;
+		user-select: none;
+		height: 100%;
+	}
+}
