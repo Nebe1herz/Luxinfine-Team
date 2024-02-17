@@ -51,8 +51,6 @@
 .section {
   display: grid;
   align-items: center;
-  justify-content: center;
-  justify-items: center;
   grid-gap: 0;
   padding: 25vh 0 0;
 }
@@ -63,27 +61,8 @@
 }
 
 .monitoring__card {
-  display: block;
-  border-radius: 15px;
-  background: rgba(0, 0, 0, 0.5);
   min-height: 135px;
-  backdrop-filter: blur(15px);
-  transition: all 0.1s ease-in;
-  /* Модификаторы */
   /* Элементы */
-}
-.monitoring__card:hover {
-  background: rgba(0, 0, 0, 0.8);
-}
-.monitoring__card_hover-false {
-  pointer-events: none;
-  user-select: none;
-}
-.monitoring__card_disabled {
-  background: rgba(0, 0, 0, 0.3);
-  pointer-events: none;
-  user-select: none;
-  height: 100%;
 }
 .monitoring__card-heading {
   font-weight: 500;
@@ -113,15 +92,7 @@
   margin-top: 15px;
 }
 .news__card {
-  display: block;
-  border-radius: 15px;
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(15px);
-  transition: all 0.1s ease-in;
   /* Элементы */
-}
-.news__card:hover {
-  background: rgba(0, 0, 0, 0.8);
 }
 .news__card-img {
   border-radius: 50%;
@@ -153,6 +124,28 @@
 }
 .link:hover {
   opacity: 1;
+}
+
+.card {
+  display: block;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(15px);
+  transition: all 0.1s ease-in;
+  /* Модификаторы */
+}
+.card:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+.card_hover-false {
+  pointer-events: none;
+  user-select: none;
+}
+.card_disabled {
+  background: rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+  user-select: none;
+  height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
